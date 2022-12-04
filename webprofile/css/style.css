@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;700;900&display=swap');
+body {
+  margin:0;
+  padding:0;
+  background-color: black;
+}
+
+/* S:NAVBAR */
+.navbar {
+  background-color:#3d3d3d;
+  margin-bottom:20px;
+}
+
+.navigasi-logo img {
+  max-width:100px;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size:1em;
+  font-style:normal;
+  margin:0 15px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border:0px;
+  cursor:pointer; 
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.closebutton {
+  color:red !important;
+  font-size:24pt !important;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.closebutton:hover {
+  color:orange !important;
+}
+
+.display-4 {
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-weight:900;
+  font-size:2em;
+}
+
+.display-5 {
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-weight:900;
+  font-size:3.5em;
+  margin:15px 0px;
+}
+
+.lead {
+  text-align:left;
+  color:rgb(118, 118, 118);
+  font-family: 'Roboto', sans-serif;
+  font-size:1.2em;
+
+}
+
+.education-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size:2em;
+  font-weight:900;
+  color:white;
+  margin-bottom:30px;
+}
+
+.education-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.2em;
+  color:rgb(118, 118, 118);
+}
+#home {
+  height:100vh;
+  margin-bottom:250px;
+}
+#pendidikan {
+  height:100vh;
+  padding-top:200px;
+}
+
+#jadwalkuliah {
+  height:100vh;
+  padding-top:200px;
+}
+
+#activity {
+  height:100vh;
+  padding-top:200px;
+}
+/* S:DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  .navbar-brand, .nav-link {
+      color: white !important;
+  }
+
+ 
+  .nav-link {
+      font-family: 'Roboto', sans-serif;
+      font-size:1em;
+      font-style:normal;
+      text-transform:uppercase;
+      padding:0px 20px;
+      text-align:center;
+      font-weight:700;
+  }
+
+  .nav-link:hover::after {
+      content: '';
+      display:block;
+      border-bottom: 3px solid #0B63DC;
+      width:50%;
+      margin:auto;
+      padding-bottom:5px;
+      margin-bottom:-8px;
+  }
+
+  .education-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size:2em;
+    font-weight:900;
+    color:white;
+    margin-top:0px;
+  }
+
+  .profile-image {
+    margin-top:130px;
+  }
+  
+  #home {
+    height:100vh;
+  }
+  #pendidikan {
+    height:100vh;
+    padding-top:200px;
+  }
+
+  #jadwalkuliah {
+    height:100vh;
+    padding-top:200px;
+  }
+
+  #activity {
+    height:100vh;
+    padding-top:200px;
+  }
+}
